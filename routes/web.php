@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/',function (){
-    return 'hi';
+    return view('home');
 });
 //Route::match(['get','post'],'/',function (){
 //    return view('home');
@@ -26,4 +26,8 @@ Route::match(['get','post'],'/shoppingbasket{id}',function (){
 Route::match(['get','post'],'/user{id}',function (){
     return view('user');
 });
+Route::post('/user',[
+    "uses" => "UserController@save",
+    "as" =>"user.save"
+]);
 

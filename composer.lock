@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "6e4f2016a79c211b089718d819b20046",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1265,6 +1265,55 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "sneek/laravel-xss-middleware",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sneek/laravel-xss-middleware.git",
+                "reference": "6cc13b3eb05abe338477d6918d8db870058d9202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sneek/laravel-xss-middleware/zipball/6cc13b3eb05abe338477d6918d8db870058d9202",
+                "reference": "6cc13b3eb05abe338477d6918d8db870058d9202",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "^5.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sneek\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cristian Giordano",
+                    "email": "cristian@sneekdigital.co.uk"
+                },
+                {
+                    "name": "Maxi Monge",
+                    "email": "maxi@sneekdigital.co.uk"
+                }
+            ],
+            "description": "Simple Laravel XSS middlware to strip all tags and encode all entities from a user",
+            "keywords": [
+                "laravel",
+                "middleware",
+                "xss"
+            ],
+            "time": "2017-10-08T18:59:22+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
